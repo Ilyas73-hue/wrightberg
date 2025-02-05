@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import "./Home.css";
 import home_carousel_img_1 from "../../Assets/home_bg_1.png";
 import home_carousel_img_2 from "../../Assets/home_bg_2.png";
@@ -30,7 +30,84 @@ function Home() {
     name:"Industries Served",
     description:"At Wrightberg, we pride ourselves on versatility and adaptability across industries. Our expertise spans hospitality, where.",
     img: `${service_card_img_3}`
-  }]
+  }];
+
+
+  // Dropdown click
+
+  const [selected, setSelected] = useState(null);
+
+  const toggle = (i) => {
+    if (selected === i) {
+      return setSelected(null);
+    }
+    setSelected(i);
+  };
+
+  //DropDown Data
+
+  const Dropdata = [
+    {
+      id: 1,
+      name: "Initial Consultation",
+      description:
+        "We begin with an in-depth discussion to understand your business, its challenges, and its goals. This step sets the foundation for a strong partnership and ensures alignment with your vision.",
+    },
+    {
+      id: 2,
+      name: "Needs Assessment",
+      description:
+        "Our team conducts a thorough analysis of your current operations, market position, and organizational strengths and weaknesses to identify areas for improvement and growth opportunities.",
+    },
+    {
+      id: 3,
+      name: "Strategic Planning",
+      description:
+        "Based on our assessment, we develop a tailored strategy that aligns with your business objectives. This includes short-term tactics and long-term plans for sustainable success.",
+    },
+    {
+      id: 4,
+      name: "Goal Setting and KPIs",
+      description:
+        "Clear and measurable goals are established, along with key performance indicators (KPIs) to track progress and ensure accountability throughout the process.",
+    },
+    {
+      id: 5,
+      name: "Market and Competitor Analysis",
+      description:
+        "We perform detailed market research and competitor benchmarking to position your business effectively within the industry and identify untapped opportunities.",
+    },
+    {
+      id: 6,
+      name: "Solution Design",
+      description:
+        "Our experts design customized solutions that address your unique challenges. This may include operational improvements, branding strategies, revenue growth initiatives, or digital transformation plans.",
+    },
+    {
+      id: 7,
+      name: "Implementation Support",
+      description:
+        "Wrightberg doesn’t just deliver recommendations; we actively support the implementation of strategies, working alongside your team to ensure seamless execution.",
+    },
+    {
+      id: 8,
+      name: "Monitoring and Optimization",
+      description:
+        "We closely monitor the implementation phase, analyzing outcomes and making necessary adjustments to maximize effectiveness and ensure desired results are achieved.",
+    },
+    {
+      id: 9,
+      name: "Evaluation and Reporting",
+      description:
+        "Regular evaluations are conducted to measure success against predefined KPIs. Comprehensive reports provide insights into progress, achievements, and areas for further improvement.",
+    },
+    {
+      id: 10,
+      name: "Continuous Improvement",
+      description:
+        "Consulting doesn’t end with the initial project. We offer ongoing support to refine strategies, adapt to market changes, and drive sustained growth for your business. ",
+    },
+  ];
 
   return (
     <div id="home">
@@ -154,6 +231,21 @@ function Home() {
           ))
         }
       </div>
+  </div>
+</section>
+
+{/* Home-section-4 */}
+
+<section id='home-section-4'>
+   <div className='container' id="home-section-4-div-1">
+          <p id="home-section-4-div-1-p-1">Weightberg Process</p>
+   </div>
+   <div className='container' id="home-section-4-div-2">
+    <p id="home-section-4-div-2-p-1">At Wrightberg, we pride ourselves on delivering comprehensive and results-oriented consulting services. Our consulting process is structured to provide clarity, efficiency, and measurable outcomes for every client. Here are the 10 key steps that define our approach:</p>
+   </div>
+
+  <div className='container' id="home-section-4-div-3">
+
   </div>
 
 </section>
