@@ -11,6 +11,8 @@ import service_ico_1 from "../../Assets/service_ico_1.png";
 import service_card_img_1 from "../../Assets/service_card_img_1.png";
 import service_card_img_2 from "../../Assets/service_card_img_2.png";
 import service_card_img_3 from "../../Assets/service_card_img_3.png";
+import { IoIosArrowForward } from "react-icons/io";
+import home_drop_data_slide_img from "../../Assets/writeberg_slide_img.png";
 
 function Home() {
 
@@ -245,7 +247,40 @@ function Home() {
    </div>
 
   <div className='container' id="home-section-4-div-3">
-
+    <div id="home-section-4-div-3-div">
+    
+    {
+      Dropdata.map((item, i) => (
+        <div id='home-section-4-div-3-1' onClick={() => toggle(i)}>
+        <div id='home-section-4-div-3-1-1'>
+          <div id='home-section-4-div-3-1-1-1'>
+          <div id='home-section-4-div-3-1-1-1-1'>
+            <p id='home-section-4-div-3-1-1-1-1-p-1'>{item.id}</p>
+          </div>
+          <div id='home-section-4-div-3-1-1-1-2'>
+            <p id="home-section-4-div-3-1-1-1-2-p-1">{item.name}</p>
+          </div>
+          </div>
+          <div id='home-section-4-div-3-1-1-2'>
+            <div id="home-section-4-div-3-1-1-2-1"> 
+            <IoIosArrowForward id="home-section-4-div-3-1-1-2-1-ico" />
+            </div>
+          </div>
+        </div>
+  {
+    selected === i && <div id='home-section-4-div-3-1-2'>
+    <p id='home-section-4-div-3-1-2-p-1'>{item.description}</p>
+ </div >
+  }
+        
+  
+       </div>
+      ))
+    }
+ </div>
+      <div id='home-section-4-div-3-2'>
+         <img id='home-section-4-div-3-2-img' src={home_drop_data_slide_img} alt={home_drop_data_slide_img} />
+     </div>
   </div>
 
 </section>
