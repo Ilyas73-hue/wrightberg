@@ -38,8 +38,8 @@ function Footer() {
                 <li id="footer-section-1-div-2-2-li"><a id="footer-section-1-div-2-2-a" href="/">Home</a></li>
                 <li id="footer-section-1-div-2-2-li"><a id="footer-section-1-div-2-2-a" href="/about">About Us</a></li>
                 <li id="footer-section-1-div-2-2-li"><a id="footer-section-1-div-2-2-a" href="/service">Services</a></li>
-                <li id="footer-section-1-div-2-2-li"><a id="footer-section-1-div-2-2-a" href="/">Career</a></li>
-                <li id="footer-section-1-div-2-2-li"><a id="footer-section-1-div-2-2-a" href="/">Contact</a></li>
+                <li id="footer-section-1-div-2-2-li"><a id="footer-section-1-div-2-2-a" href="/team">Team</a></li>
+                <li id="footer-section-1-div-2-2-li"><a id="footer-section-1-div-2-2-a" href="/contact">Contact</a></li>
              </ul>
             </div>
           </div>
