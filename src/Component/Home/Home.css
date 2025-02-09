@@ -214,10 +214,12 @@ line-height: 60px;
 @media(max-width: 500px){
     #carousel-content-1-div-2-h6-1{
         width: 100%;
+        padding: 10px;
     }
 
     #carousel-content-1-div-3-p-1{
      width: 100%;
+     padding: 10px;
     }
 
     #carousel-content-1-div-3-button{
