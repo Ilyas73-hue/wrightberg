@@ -117,7 +117,7 @@ function Footer() {
       <p id="footer-section-3-div-1-1-p-1">© Copyright 2024 <span id="footer-section-3-div-1-1-p-1-span">Wrightbergy</span>. All Rights Reserved.</p>
     </div>
     <div id="footer-section-3-div-1-2">
-      <p id="footer-section-3-div-1-2-p-1">Design by : <span id="footer-section-3-div-1-2-p-1-span">Intwhizz</span></p>
+      <p id="footer-section-3-div-1-2-p-1">Developed by : <span id="footer-section-3-div-1-2-p-1-span">Intwhizz</span></p>
     </div>
    </div>
 </section>
@@ -126,4 +126,4 @@ function Footer() {
   )
 }
 
-export default Footer
+export default Footer;

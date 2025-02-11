@@ -103,9 +103,9 @@ function About() {
                 </div>
               </div>
            </div>
-           <div id="home-section-2-div-1-2-4">
+           {/* <div id="home-section-2-div-1-2-4">
              <button id="home-section-2-div-1-2-4-button">Learn More</button>
-           </div>
+           </div> */}
          </div>
      </div>
 </section>

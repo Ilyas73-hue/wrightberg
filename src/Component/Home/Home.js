@@ -213,7 +213,7 @@ function Home() {
           </div>
           <div
           className='container' id="carousel-content-1-div-3">
-            <button id="carousel-content-1-div-3-button">Read More</button>
+            <button onClick={() => window.location.href=`/about`} id="carousel-content-1-div-3-button">Read More</button>
           </div>
         </div>
     </div>
@@ -264,7 +264,7 @@ function Home() {
               </div>
            </div>
            <div id="home-section-2-div-1-2-4">
-             <button id="home-section-2-div-1-2-4-button">Learn More</button>
+             <button onClick={() => window.location.href=`/about`} id="home-section-2-div-1-2-4-button">Learn More</button>
            </div>
          </div>
      </div>
@@ -296,7 +296,7 @@ function Home() {
               <p id="home-section-3-div-3-1-card-1-2-p-2">{item.description}</p>
             </div>
             <div id="home-section-3-div-3-1-card-1-3">
-               <button id="home-section-3-div-3-1-card-1-3-button">Read more <img src={service_ico_1} alt={service_ico_1} /></button>
+               <button  onClick={() => window.location.href=`/service`} id="home-section-3-div-3-1-card-1-3-button">Read more <img src={service_ico_1} alt={service_ico_1} /></button>
             </div>
           </div>
           ))
